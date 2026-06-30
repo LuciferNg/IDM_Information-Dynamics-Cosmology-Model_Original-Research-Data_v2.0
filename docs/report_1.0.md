@@ -19,6 +19,16 @@ The universe has one fundamental imperative: maintain global consistency. It has
 
 This reframes the entire physical programme. We are not fitting parameters to data. We are reverse-engineering the system's consistency constraint set to find what it was that had no other choice.
 
+Crucially, this framework does **not** assume the universe has a predefined ontology. It does not start with "the universe is a distributed computing system" and then look for evidence. It starts with data — a sync dip at z ≈ 0.6, a CLASS χ²/dof = 0.51 — and reverse-engineers the consistent interpretation. The ontology emerges from the convergence of mathematics and data, not from prior metaphysical commitment.
+
+Each step is forced, not chosen:
+- The sync dip required a Lagrangian → Horndeski with α_B ≈ +0.15
+- The Lagrangian required a deeper principle → forced closure
+- Forced closure required a field → Consistency Importance Weight W
+- W required a response function → personality tensor T_μν = δ²S/δW_μδW_ν
+
+The fact that T_μν has a formal correspondence with psychological personality is not a projection. It is a mathematical convergence that the data forced upon us. The name "personality tensor" is not poetic license — it is the most accurate term for the structure that emerged from the data.
+
 The key quantity is the **Consistency Importance Weight** (重要度權重) W ∈ [0,1]: the fraction of compute budget the system allocates to maintaining a variable's consistency. High W → deterministic (classical physics). Low W → probabilistic (quantum mechanics).
 
 The programme began with an anomaly — the sync dip at z ≈ 0.6 — and arrived at a framework that unifies cosmology, consciousness, and the nature of physical law itself.
