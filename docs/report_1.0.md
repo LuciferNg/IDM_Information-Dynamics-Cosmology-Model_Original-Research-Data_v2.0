@@ -51,7 +51,7 @@ Sync dip f(z)                      →  W_cosmo(z) = 1 − ε·(z/zc)·exp(−z/
 zc = 0.60                           →  Critical scale (phase transition point)
 α_B ≈ +0.14–0.16                    →  ∂W/∂z gradient (compensatory response)
 Entropy gradient ℒ_entropy          →  Compute cost C(σ) of consistency
-Screening ξ₀·exp(−λφ)               →  Importivity recovery attractor
+Screening ξ₀·exp(−λφ)               →  Importance Weight recovery attractor
 χ²/dof = 0.51                       →  Forced closure signature (CLASS)
 ```
 
@@ -78,7 +78,7 @@ The mapping is not a fit. The form W(z) = 1 − ε·(z/zc)·exp(−z/zc) is the 
 
 ### 2.1 The Core Insight
 
-The system has one compute budget B. It must allocate this budget across all degrees of freedom to maintain global consistency. The importivity field W(z) determines the allocation. The cost C(z) = 1/H(z)² is the compute cost per unit weight.
+The system has one compute budget B. It must allocate this budget across all degrees of freedom to maintain global consistency. The importance weight field W(z) determines the allocation. The cost C(z) = 1/H(z)² is the compute cost per unit weight.
 
 The budget is conserved: B = ∫ W(z)·C(z) dz = constant.
 
