@@ -1,51 +1,84 @@
-# Consistency Importance Weight Framework
+# IDM-Consistency-Importance-Weight
 
-Parameters are not chosen — they are forced.
+**Parameters are not chosen — they are forced.**
 
-The universe has one mandate: consistency. With finite compute budget, parameters are the only feasible solution. This framework maps physics onto importance_weight — the system's resource allocation for maintaining consistency.
+The universe has one mandate: **consistency** — with finite compute budget, parameters are the unique feasible solution. This framework reverse-engineers that constraint set.
 
-## Core Axioms
+---
 
-- **Consistency mandate** — the universe must maintain global consistency
-- **Finite budget** — not all degrees of freedom can be resolved deterministically
-- **Forced closure** — parameters are the unique feasible solution, not an optimization choice
-- **Importance Weight** *I_f* ∈ [0,1] — fraction of compute budget allocated to resolving variable *f*
-  - *I_f* → 1: deterministic (classical)
-  - *I_f* → 0: probabilistic (quantum)
+## The Core Idea
+
+- **Importance Weight W ∈ [0,1]** — fraction of compute budget allocated to resolving a variable's consistency
+  - W → 1: deterministic (classical physics)
+  - W → 0: probabilistic (quantum mechanics)
+- **Parameters are forced closure** — they are the only feasible stable state, not an optimization choice
+- **Personality T_μν** — the shape of the consistency cost function itself, one level deeper than parameters
+
+---
+
+## What's Been Proven
+
+| Proof | Method | Result |
+|-------|--------|--------|
+| Sync dip → W(z) mapping | IDM CLASS data | ε = 0.1545, zc = 0.60, χ²/dof = 0.51 |
+| Forced closure | Numerical fixed-point stability | True (ε, zc) is unique stable attractor |
+| α_B consistency | IDM growth mismatch | α_B = −0.58·dW/dz, α_B(0) = 0.1444 |
+| Euler-Lagrange | SymPy derivation + δC/δW coupling | CV improved 0.76 → 0.17 |
+| Consciousness | CIP phase → W modulation | Local recursive version of global optimisation |
+
+---
 
 ## Repo Structure
 
 ```
-IDM-Consistency-Importance-Weight/
-├── README.md                    # This file
-├── AGENTS.md                    # Hermes agent instructions
-├── LICENSE                      
-├── docs/
-│   ├── IDM-Consistency-Importance-Weight.md     # Core document
-│   ├── importance-weight-branch-analysis.md  # Territory map of all possibilities
-│   ├── importance_weight_lagrangian.md     # Formal Lagrangian + forced closures
-│   └── preliminary-report.md         # Current state summary
-├── src/
-│   ├── importance_weight_spike.py              # I(z) mapping, α_B consistency, personality
-│   └── importance_weight_consciousness_lagrangian.py  # Consciousness domain + Lagrangian
-└── results/
-    └── importance_weight/
-        ├── importance_weight_space.png   # Full importance_weight plot
-        ├── importance_weight_z.txt       # Numerical data
-        └── importance_weight_lagrangian.md  # From Step 4
+docs/
+├── report_1.0.md                     # Full programme narrative
+├── consistency-importance-weight.md   # Core framework definitions
+├── importance-weight-branch-analysis.md / Territory map
+├── importance-weight-lagrangian.md    # Formal action + EL
+├── forced_closure_derivation.md       # Fixed-point proof
+├── euler_lagrange_proof.md           # SymPy derivation
+├── preliminary-report.md              # Phase 1 summary
+└── theory-assessment.md               # Honest evaluation
+src/
+├── importance_weight_spike.py              # W(z) from sync dip
+├── importance_weight_consciousness_lagrangian.py
+├── forced_closure_derivation.py
+└── euler_lagrange_proof.py
+results/importance_weight/                # Figures + data
 ```
+
+---
+
+## Key Numbers
+
+| Quantity | Value |
+|----------|-------|
+| Sync dip ε | 0.1545 |
+| Critical scale zc | 0.60 |
+| W(0) | 0.9975 |
+| W(zc) — minimum | 0.9432 |
+| Personality T_zz(zc) | +0.158 |
+| Braiding α_B(0) | 0.1444 |
+| CLASS χ²/dof | 0.51 |
+| Dip budget fraction | 0.22% |
+
+---
 
 ## Status
 
-- **Framework**: v0.1 — interpretive ontology, connected to IDM data
-- **Quantitative**: sync dip → *I*(*z*) mapping confirmed, α_B consistent
-- **Personality tensor**: *T_{zz}* = +0.158 at the critical scale (recovery attractor)
-- **Forced closures**: 8 irreducible constraints identified
-
-## Related Projects
-
-- [IDM Lagrangian Reverse Engineering](https://github.com/LuciferNg/IDM-Lagrangian-Reverse-Engineering)
-- [Consciousness Interface Protocol (CIP)](references in docs)
+| Phase | What | Status |
+|-------|------|--------|
+| Ontology + Interpretation | Axioms, mapping, forced closure proof | ✅ Complete |
+| Derivation + Formalisation | δC/δW coupling, Horndeski-level EL | ⏳ In progress |
+| Verification | Publishable prediction for DESI/Euclid | ❌ Not started |
 
 ---
+
+## Related
+
+- [IDM Lagrangian Reverse Engineering](https://github.com/LuciferNg/IDM-Lagrangian-Reverse-Engineering) — the sync dip that started this
+
+---
+
 *2026-06-30  ·  Author: LuciferNg*
