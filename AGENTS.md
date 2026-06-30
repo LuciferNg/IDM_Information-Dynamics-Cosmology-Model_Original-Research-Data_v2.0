@@ -13,6 +13,8 @@ Parameters are forced, not chosen. The universe has one mandate: consistency —
 - `src/importance_weight_consciousness_lagrangian.py` — CIP phase modulation in importance_weight space
 - `results/importance_weight/importance_weight_space.png` — Full 6-panel figure
 
+- `docs/report_1.0.md` — Full programme narrative (Report 1.0)
+
 ## Planned next steps
 - Formal forced closure derivation (ε, zc as unique feasible solution given B)
 - Consciousness domain numerical fitting to CIP experience data
