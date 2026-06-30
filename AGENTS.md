@@ -14,8 +14,10 @@ Parameters are forced, not chosen. The universe has one mandate: consistency —
 - `results/importance_weight/importance_weight_space.png` — Full 6-panel figure
 
 - `docs/report_1.0.md` — Full programme narrative (Report 1.0)
+- `docs/phase2_task_list.md` — Phase 2 tasks: P0-P3 priorities and status
 
 ## Planned next steps
-- Formal forced closure derivation (ε, zc as unique feasible solution given B)
-- Consciousness domain numerical fitting to CIP experience data
-- Personality tensor extension to other domains (quantum, classical, CAT)
+- **P0:** Close κ drift (δC/δW + dV/dW + Horndeski braiding → CV→0)
+- **P1:** Analytical forced closure proof + first observable prediction
+- **P2:** P3 (W→g_μν local coupling), consciousness fitting
+- **P3:** Paper 1 (IDM+Hodeski) → arXiv submission
