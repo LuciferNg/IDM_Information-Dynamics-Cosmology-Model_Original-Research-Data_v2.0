@@ -42,7 +42,7 @@ docs/
 └── theory-assessment.md               # Honest evaluation
 src/
 ├── importance_weight_spike.py              # W(z) from sync dip
-├── importance_weight_consciousness_lagrangian.py
+├── local_w_modulation.py
 ├── forced_closure_derivation.py
 └── euler_lagrange_proof.py
 results/importance_weight/                # Figures + data
